@@ -2,11 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:id="@+id/layout1"
     android:orientation="vertical"
     android:background="@drawable/bgyellow5"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+
     tools:context=".MainActivity" >
 
 
@@ -18,6 +21,16 @@
 <!--        android:paddingTop="0pt"-->
 <!--        android:paddingBottom="0pt"-->
 <!--        android:text="animate" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/man"-->
+<!--        android:layout_width="85dp"-->
+<!--        android:layout_height="42dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="11dp"-->
+<!--        android:layout_marginBottom="226dp"-->
+<!--        app:srcCompat="@drawable/man" />-->
 
     <TextClock
         android:id="@+id/textClock1"
@@ -39,36 +52,16 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/train1"
-        android:layout_width="200dp"
-        android:layout_height="80dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginBottom="134dp"
-        app:srcCompat="@drawable/train1" />
-
-    <ImageView
         android:id="@+id/train2"
-        android:layout_width="161dp"
-        android:layout_height="78dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="450dp"
-        android:layout_marginBottom="188dp"
-        app:srcCompat="@drawable/train2" />
+        android:scaleType="center"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        app:srcCompat="@drawable/tarinfinalrev"/>
 
-    <ImageView
-        android:id="@+id/man"
-        android:layout_width="85dp"
-        android:layout_height="42dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginBottom="226dp"
-        app:srcCompat="@drawable/man" />
+
 
     <ImageView
         android:id="@+id/cloud1"
@@ -86,9 +79,64 @@
         android:layout_height="91dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="208dp"
-        android:layout_marginEnd="94dp"
+        android:layout_marginTop="219dp"
+        android:layout_marginEnd="70dp"
         app:srcCompat="@drawable/cloud2" />
+
+
+    <ImageView
+        android:id="@+id/man1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="429dp"
+        android:contentDescription="TODO"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        app:srcCompat="@drawable/man" />
+
+    <ImageView
+        android:id="@+id/man2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="429dp"
+        android:contentDescription="TODO"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        app:srcCompat="@drawable/man" />
+    <ImageView
+        android:id="@+id/man3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="429dp"
+        android:contentDescription="TODO"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        app:srcCompat="@drawable/man" />
+    <ImageView
+        android:id="@+id/man4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="429dp"
+        android:contentDescription="TODO"
+        android:scaleX="0.4"
+        android:scaleY="0.4"
+        app:srcCompat="@drawable/man" />
+
+
+    <ImageView
+        android:id="@+id/train1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:scaleType="center"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:srcCompat="@drawable/tarinfinal1" />
+
 
 
 </RelativeLayout>

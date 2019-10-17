@@ -51,6 +51,12 @@
         android:textSize="35dp"
         android:textStyle="bold" />
 
+
+
+
+
+
+
     <ImageView
         android:id="@+id/train2"
         android:layout_width="wrap_content"
@@ -79,10 +85,19 @@
         android:layout_height="91dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="219dp"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="70dp"
         app:srcCompat="@drawable/cloud2" />
 
+
+    <ImageView
+        android:id="@+id/cloud3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-100dp"
+        android:scaleX=".5"
+        android:scaleY=".50"
+        app:srcCompat="@drawable/cloud3" />
 
     <ImageView
         android:id="@+id/man1"
@@ -128,6 +143,20 @@
 
 
     <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="247dp"
+        android:layout_marginLeft="60dp"
+        android:scaleType="center"
+        android:scaleX="0.40"
+        android:scaleY="0.40"
+        app:srcCompat="@drawable/station" />
+
+
+
+
+        <ImageView
         android:id="@+id/train1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
